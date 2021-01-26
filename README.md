@@ -1,6 +1,6 @@
 ### Hi there 👋, I'm Amirhossein Akhoondzadeh
 #### Mobile Development
-![Mobile Development](https://media-exp1.licdn.com/dms/image/C4D16AQFc7mQMUIiN7w/profile-displaybackgroundimage-shrink_200_800/0/1608923871452?e=1617235200&v=beta&t=LQ0Fg215jMqm7QpjNrgmHy2IKhuQTaczc1mq6cuM6V4)
+![Mobile Development](https://github.com/amirhosseinakhoondzadeh/amirhosseinakhoondzadeh/blob/main/assets/flutter-banner.png)
 
 I'm Amir, and I do Mobile Development. I thoroughly enjoy learning cutting edge technologies and frameworks related to Mobile Development Engineering Like Flutter, Dart, Android, iOS as well as Software Architecture, Design Patterns and Best Practices.
 
