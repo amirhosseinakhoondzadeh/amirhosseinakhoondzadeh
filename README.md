@@ -1,4 +1,4 @@
-### Hi there 👋, Amirhossein Akhoondzadeh
+### Hi there 👋, I'm Amirhossein Akhoondzadeh
 #### Mobile Development
 ![Mobile Development](https://media-exp1.licdn.com/dms/image/C4D16AQFc7mQMUIiN7w/profile-displaybackgroundimage-shrink_200_800/0/1608923871452?e=1617235200&v=beta&t=LQ0Fg215jMqm7QpjNrgmHy2IKhuQTaczc1mq6cuM6V4)
 
@@ -6,7 +6,15 @@ I'm Amir, and I do Mobile Development. I thoroughly enjoy learning cutting edge 
 
 Skills: Flutter / Dart / Android / iOS
 
+- 🌱 I’m currently learning Full-stack development 
+- 👯 I’m looking to collaborate on Flutter & Dart 
+- 💬 Ask me about Software Architecture, Design Patterns, Mobile Development, Flutter SDK and Dart 
+- 📫 How to reach me: amirhossein.akhoondzadeh@live.com 
+- ⚡ Fun fact: Coffee and Coding all day long! 
 
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/amirhosseinakhoondzadeh)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/amirhosseinakhoondzadeh/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/4297023)  
 
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=amirhosseinakhoondzadeh&show_icons=true)  
+
+![Profile views](https://gpvc.arturio.dev/amirhosseinakhoondzadeh)  
