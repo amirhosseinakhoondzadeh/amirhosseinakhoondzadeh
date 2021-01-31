@@ -6,7 +6,7 @@ I'm Amir, and I do Mobile Development. I thoroughly enjoy learning cutting edge 
 
 Skills: Flutter / Dart / Android / iOS
 
-- 🌱 I’m currently learning Full-stack development 
+- 🌱 I’m currently learning front-end development 
 - 👯 I’m looking to collaborate on Flutter & Dart 
 - 💬 Ask me about Software Architecture, Design Patterns, Mobile Development, Flutter SDK and Dart 
 - 📫 How to reach me: amirhossein.akhoondzadeh@live.com 
