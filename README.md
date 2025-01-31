@@ -9,7 +9,7 @@ Skills: Flutter / Dart / Android / iOS
 - 🌱 I’m currently learning front-end development 
 - 👯 I’m looking to collaborate on Flutter & Dart 
 - 💬 Ask me about Software Architecture, Design Patterns, Mobile Development, Flutter SDK and Dart 
-- 📫 How to reach me: amirhossein.akhoondzadeh@live.com 
+- 📫 How to reach me: amirhossein.akhoondzadeh@gmail.com 
 - ⚡ Fun fact: Coffee and Coding all day long! 
 
 
