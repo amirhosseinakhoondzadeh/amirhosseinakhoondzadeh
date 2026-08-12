@@ -44,11 +44,3 @@ Clean Architecture feature folder from two prompts.
 **[flutter_design_patterns](https://github.com/amirhosseinakhoondzadeh/flutter_design_patterns)**
 is the decorator pattern in Dart, written as a menu where each topping
 wraps the item under it.
-
-## Elsewhere
-
-YouTube: [@essentialsemicolon](https://www.youtube.com/@essentialsemicolon)
-
-LinkedIn: [amirhosseinakhoondzadeh](https://www.linkedin.com/in/amirhosseinakhoondzadeh)
-
-Email: amirhossein.akhoondzadeh@gmail.com
