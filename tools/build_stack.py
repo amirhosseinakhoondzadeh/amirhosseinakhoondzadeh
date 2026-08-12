@@ -11,7 +11,11 @@ AMBER = "#F59E0B"
 LIGHT = "#F8FAFC"
 MUTED = "#8A93A6"
 
-ITEMS = ["FLUTTER", "DART", "ANDROID", "iOS", "CLEAN ARCHITECTURE", "BLOC", "AI-ASSISTED WORKFLOWS"]
+# Breadth only. No library and no architectural school goes in this row:
+# naming one narrows him, and the repo descriptions already carry the
+# specifics (Bloc, get_it, Clean Architecture, fl_chart, test counts).
+ITEMS = ["FLUTTER", "DART", "ANDROID", "iOS", "ARCHITECTURE", "TESTING",
+         "AI-ASSISTED WORKFLOWS"]
 
 SIZE = 14
 TRACK = 0.12

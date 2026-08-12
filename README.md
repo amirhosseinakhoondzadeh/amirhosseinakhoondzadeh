@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/stack.svg" alt="Flutter, Dart, Android, iOS, Clean Architecture, Bloc, AI-assisted workflows" width="100%">
+  <img src="assets/stack.svg" alt="Flutter, Dart, Android, iOS, architecture, testing, AI-assisted workflows" width="100%">
 </p>
 
 ## The channel
