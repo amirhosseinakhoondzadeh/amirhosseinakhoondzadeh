@@ -20,7 +20,9 @@ RED = "#EF4444"
 W, H = 1200, 340
 
 NAME = "Amirhossein Akhoondzadeh"
-ROLE = "SENIOR MOBILE ENGINEER    BERLIN"
+# Berlin is deliberately absent: GitHub already renders it from the profile
+# location field in the sidebar, directly left of this banner.
+ROLE = "SENIOR MOBILE ENGINEER"
 LINE1 = "real code that looks correct,"
 LINE2 = "shown failing on screen."
 
@@ -33,7 +35,7 @@ add = parts.append
 
 add(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
     f'width="{W}" height="{H}" role="img" '
-    f'aria-label="Amirhossein Akhoondzadeh, senior mobile engineer, Berlin. '
+    f'aria-label="Amirhossein Akhoondzadeh, senior mobile engineer. '
     f'Real code that looks correct, shown failing on screen.">')
 
 # Background

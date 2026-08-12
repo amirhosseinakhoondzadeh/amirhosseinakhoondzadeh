@@ -1,4 +1,4 @@
-<img src="assets/header.svg" alt="Amirhossein Akhoondzadeh, senior mobile engineer, Berlin. Real code that looks correct, shown failing on screen." width="100%">
+<img src="assets/header.svg" alt="Amirhossein Akhoondzadeh, senior mobile engineer. Real code that looks correct, shown failing on screen." width="100%">
 
 <p align="center">
   <a href="https://www.youtube.com/@essentialsemicolon"><img src="assets/btn-youtube.svg" alt="essential semicolon on YouTube" height="44"></a>
