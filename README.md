@@ -1,20 +1,41 @@
-### Hi there 👋, I'm Amirhossein Akhoondzadeh
-#### Mobile Development
-![Mobile Development](https://github.com/amirhosseinakhoondzadeh/amirhosseinakhoondzadeh/blob/main/assets/flutter-banner.png)
+## Amirhossein Akhoondzadeh
 
-I'm Amir, and I do Mobile Development. I thoroughly enjoy learning cutting edge technologies and frameworks related to Mobile Development Engineering Like Flutter, Dart, Android, iOS as well as Software Architecture, Design Patterns and Best Practices.
+Senior mobile engineer in Berlin. Flutter, Android, iOS.
 
-Skills: Flutter / Dart / Android / iOS
+I run essential semicolon, a YouTube channel for working mobile engineers
+who have to decide whether code is safe to ship. Each video takes real
+code that looks correct, shows it failing on screen, proves the mechanism
+behind the failure, and ends on a verdict.
 
-- 🌱 I’m currently learning front-end development 
-- 👯 I’m looking to collaborate on Flutter & Dart 
-- 💬 Ask me about Software Architecture, Design Patterns, Mobile Development, Flutter SDK and Dart 
-- 📫 How to reach me: amirhossein.akhoondzadeh@gmail.com 
-- ⚡ Fun fact: Coffee and Coding all day long! 
+https://www.youtube.com/@essentialsemicolon
 
+### What is in here
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/amirhosseinakhoondzadeh)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/amirhosseinakhoondzadeh/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/4297023)  
+`weather_app_flutter` is the one to read first. Clean Architecture split
+across data, domain and presentation, Bloc for state, get_it for
+injection, and 13 tests over the bloc, the local datasource and both use
+cases. It talks to the OpenWeatherMap API and handles nested vertical and
+horizontal scrolling, which is the part that usually breaks.
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=amirhosseinakhoondzadeh&show_icons=true)  
+`energy_monitor_app_flutter` is the same architecture pointed at a local
+JSON API. fl_chart draws the solar, house and battery series, and the
+watts to kilowatts switch re-renders the chart from the same data. 29
+tests, including a widget test over the whole page.
 
-![Profile views](https://gpvc.arturio.dev/amirhosseinakhoondzadeh)  
+`mason_flutter_meetup_berlin_23` is the sample project from a talk I gave
+at a Flutter meetup in Berlin in April 2023. It carries `meetup_brick`, a
+Mason brick that generates a full Clean Architecture feature folder from
+two prompts.
+
+`flutter_design_patterns` is the decorator pattern in Dart, written as a
+menu where each topping wraps the item under it.
+
+### Elsewhere
+
+YouTube: https://www.youtube.com/@essentialsemicolon
+
+LinkedIn: https://www.linkedin.com/in/amirhosseinakhoondzadeh
+
+Stack Overflow: https://stackoverflow.com/users/4297023
+
+Email: amirhossein.akhoondzadeh@gmail.com
