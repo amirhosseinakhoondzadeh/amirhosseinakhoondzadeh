@@ -8,10 +8,13 @@ import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from textpath import text_path, measure
 
+# Tokens taken from the brand kit SVGs, not re-invented.
 NAVY = "#0A0E1A"
+PANEL = "#0D1220"
 AMBER = "#F59E0B"
 LIGHT = "#F8FAFC"
-MUTED = "#8A93A6"
+MUTED = "#94A3B8"
+DIM = "#64748B"
 RED = "#EF4444"
 
 W, H = 1200, 340
@@ -41,22 +44,20 @@ add('<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUs
     f'<circle cx="1.5" cy="1.5" r="1.5" fill="{LIGHT}" opacity="0.05"/></pattern></defs>')
 add(f'<rect width="{W}" height="{H}" rx="18" fill="url(#grid)"/>')
 
-# The semicolon mark: square dot over a curved tail, matching the avatar.
-# The tail runs mostly vertical and hooks left only near the tip, which is
-# what keeps it reading as a semicolon rather than a blob.
-DOT = 46
-dot_y = 104
-add(f'<rect x="{MARK_X}" y="{dot_y}" width="{DOT}" height="{DOT}" fill="{AMBER}"/>')
-cxm = MARK_X + DOT / 2
-t = dot_y + DOT + 28
-r = DOT / 2 - 1
-# Filled tapered comma: rounded cap at the top, outer edge sweeping down and
-# left, inner edge returning. The taper is what separates a comma from a blob.
-add(f'<path d="M{cxm - r} {t} '
-    f'A {r} {r} 0 0 1 {cxm + r} {t} '
-    f'C {cxm + r + 5} {t + 52}, {cxm + r - 6} {t + 88}, {cxm - 26} {t + 108} '
-    f'C {cxm - 8} {t + 74}, {cxm - r + 8} {t + 42}, {cxm - r} {t} Z" '
-    f'fill="{AMBER}"/>')
+# The semicolon mark, copied verbatim from the brand kit
+# (essential-semicolon_mark_profile-800x800.svg) and only scaled and moved.
+# Kit geometry: 80 square dot at (365,270); tail M405 410 Q415 510 350 555
+# stroked at 44 with a round cap. The tail being roughly half the dot's width
+# is the defining proportion, so it is not re-drawn here.
+MARK_SCALE = 0.62
+mark_left, mark_top = 328.0, 270.0          # kit-space bounding box origin
+tx = MARK_X - mark_left * MARK_SCALE
+ty = 100 - mark_top * MARK_SCALE
+add(f'<g transform="translate({tx:.2f},{ty:.2f}) scale({MARK_SCALE})">'
+    f'<rect x="365" y="270" width="80" height="80" fill="{AMBER}"/>'
+    f'<path d="M 405 410 Q 415 510 350 555" stroke="{AMBER}" stroke-width="44" '
+    f'stroke-linecap="round" fill="none"/>'
+    f'</g>')
 
 # Name
 name_size = 52
@@ -94,7 +95,7 @@ add(f'<rect x="{cx:.1f}" y="266" width="13" height="26" fill="{AMBER}">'
 # channel, so the banner states it rather than only describing it.
 PX, PY, PW, PH = 706, 202, 418, 104
 add(f'<rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" rx="10" '
-    f'fill="#121A2B" stroke="#1F293D" stroke-width="1"/>')
+    f'fill="{PANEL}" stroke="#1F293D" stroke-width="1"/>')
 
 m = 15
 d, adv = text_path("$ ", "mono", m, PX + 24, PY + 42)
