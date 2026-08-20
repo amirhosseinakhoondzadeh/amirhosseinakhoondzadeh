@@ -23,8 +23,16 @@ with a real device.
 
 ## What is in here
 
+**[flutter-textfield-loses-text-repro](https://github.com/amirhosseinakhoondzadeh/flutter-textfield-loses-text-repro)**
+is the one to read first, and it is the repo behind video one of the
+channel. A 48 line Flutter app where one tap makes a TextField forget
+everything you typed: the bug, an instrumented field that prints when
+its State is born and dies, two fixes on two branches, and a six
+variant widget test that proves in about two seconds which half of the
+fix does the work.
+
 **[weather_app_flutter](https://github.com/amirhosseinakhoondzadeh/weather_app_flutter)**
-is the one to read first. Clean Architecture split across data, domain and
+is the architecture showcase. Clean Architecture split across data, domain and
 presentation, Bloc for state, get_it for injection, and 13 tests over the
 bloc, the local datasource and both use cases. It reads from OpenWeatherMap
 and handles nested vertical and horizontal scrolling, which is the part
