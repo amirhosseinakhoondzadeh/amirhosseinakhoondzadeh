@@ -1,4 +1,4 @@
-<img src="assets/header.svg" alt="Amirhossein Akhoondzadeh, senior mobile engineer. Real code that looks correct, shown failing on screen." width="100%">
+<img src="assets/header.svg" alt="Amirhossein Akhoondzadeh, senior mobile engineer. Lead AI agents. Ship mobile software you can trust." width="100%">
 
 <p align="center">
   <a href="https://www.youtube.com/@essentialsemicolon"><img src="assets/btn-youtube.svg" alt="essential semicolon on YouTube" height="44"></a>
@@ -12,16 +12,28 @@
 
 ## The channel
 
-essential semicolon is for working mobile engineers who have to decide
-whether code is safe to ship. Each video takes real code that looks
-correct, shows it failing on screen, proves the mechanism behind the
-failure, and ends on a verdict.
+essential semicolon is for working mobile engineers who hand real work to
+AI coding agents and still have to sign off on what ships. Each video runs
+an agent on a real Flutter app, catches what it got right or wrong on
+screen, teaches the concept behind it, and shows what the run cost.
 
-No tutorials on things that already work. The interesting part is always
-the gap between code that passes review and code that survives contact
-with a real device.
+A win gets reported as a win. The first four repos below hold the code
+from an episode, so you can clone one and check the claim yourself.
 
 ## What is in here
+
+**[flutter-parallel-shop](https://github.com/amirhosseinakhoondzadeh/flutter-parallel-shop)**
+is the repo behind the parallel agents episode. Two Claude Code agents
+worked on two branches of a Flutter shop, both passed their own tests, and
+git merged them with zero conflicts. The merged code failed
+`flutter analyze` with four errors. It holds both branches as the agents
+left them, the merge, the two prompts and the held back price test.
+
+**[flutter-spec-vs-prompt](https://github.com/amirhosseinakhoondzadeh/flutter-spec-vs-prompt)**
+is the repo behind the spec versus prompt episode. The same model built
+one Flutter feature twice: once from a one sentence request, once from a
+`SPEC.md` and six acceptance tests written before the code. After a new
+persistence requirement, the six tests were untouched and still passed.
 
 **[flutter-search-race-repro](https://github.com/amirhosseinakhoondzadeh/flutter-search-race-repro)**
 is the repo behind the channel's pumpAndSettle video. A Flutter search

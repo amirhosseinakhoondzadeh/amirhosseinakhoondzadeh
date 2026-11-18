@@ -15,7 +15,6 @@ AMBER = "#F59E0B"
 LIGHT = "#F8FAFC"
 MUTED = "#94A3B8"
 DIM = "#64748B"
-RED = "#EF4444"
 
 W, H = 1200, 340
 
@@ -23,8 +22,8 @@ NAME = "Amirhossein Akhoondzadeh"
 # Berlin is deliberately absent: GitHub already renders it from the profile
 # location field in the sidebar, directly left of this banner.
 ROLE = "SENIOR MOBILE ENGINEER"
-LINE1 = "real code that looks correct,"
-LINE2 = "shown failing on screen."
+LINE1 = "Lead AI agents."
+LINE2 = "Ship mobile software you can trust."
 
 # Left column: the semicolon mark. Right column: the type.
 MARK_X = 96
@@ -36,7 +35,7 @@ add = parts.append
 add(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
     f'width="{W}" height="{H}" role="img" '
     f'aria-label="Amirhossein Akhoondzadeh, senior mobile engineer. '
-    f'Real code that looks correct, shown failing on screen.">')
+    f'Lead AI agents. Ship mobile software you can trust.">')
 
 # Background
 add(f'<rect width="{W}" height="{H}" rx="18" fill="{NAVY}"/>')
@@ -74,43 +73,19 @@ add(f'<path d="{d}" fill="{MUTED}"/>')
 # Amber rule under the role
 add(f'<rect x="{TEXT_X}" y="200" width="72" height="4" fill="{AMBER}"/>')
 
-# Tagline. "failing" carries the amber so the eye lands on the one word
-# the whole channel is about.
-tag_size = 26
-d, w1 = text_path(LINE1, "medium", tag_size, TEXT_X, 250)
+# Tagline, the channel banner's two lines: the first in light, the second in
+# amber, as on the YouTube banner.
+tag_size = 30
+d, w1 = text_path(LINE1, "black", tag_size, TEXT_X, 252)
 add(f'<path d="{d}" fill="{LIGHT}"/>')
-
-cur = TEXT_X
-for chunk, colour in (("shown ", LIGHT), ("failing", AMBER), (" on screen.", LIGHT)):
-    d, adv = text_path(chunk, "medium", tag_size, cur, 286)
-    add(f'<path d="{d}" fill="{colour}"/>')
-    cur += adv
-w2 = cur - TEXT_X
+d, w2 = text_path(LINE2, "black", tag_size, TEXT_X, 292)
+add(f'<path d="{d}" fill="{AMBER}"/>')
 
 # The one animated element: a terminal cursor after the last word.
 cx = TEXT_X + w2 + 10
-add(f'<rect x="{cx:.1f}" y="266" width="13" height="26" fill="{AMBER}">'
+add(f'<rect x="{cx:.1f}" y="268" width="14" height="28" fill="{AMBER}">'
     '<animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" '
     'repeatCount="indefinite" calcMode="discrete"/></rect>')
-
-# Right side: a real failing test receipt. This is the premise of the whole
-# channel, so the banner states it rather than only describing it.
-PX, PY, PW, PH = 706, 202, 418, 104
-add(f'<rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" rx="10" '
-    f'fill="{PANEL}" stroke="#1F293D" stroke-width="1"/>')
-
-m = 15
-d, adv = text_path("$ ", "mono", m, PX + 24, PY + 42)
-add(f'<path d="{d}" fill="{MUTED}"/>')
-d, _ = text_path("flutter test", "mono", m, PX + 24 + adv, PY + 42)
-add(f'<path d="{d}" fill="{LIGHT}"/>')
-
-cur = PX + 24
-for chunk, colour in (("00:02 ", MUTED), ("+5 ", LIGHT), ("-1", RED),
-                      (": Some tests failed.", RED)):
-    d, adv = text_path(chunk, "mono", m, cur, PY + 76)
-    add(f'<path d="{d}" fill="{colour}"/>')
-    cur += adv
 
 add('</svg>')
 
