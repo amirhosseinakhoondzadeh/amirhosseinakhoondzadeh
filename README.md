@@ -17,10 +17,17 @@ AI coding agents and still have to sign off on what ships. Each video runs
 an agent on a real Flutter app, catches what it got right or wrong on
 screen, teaches the concept behind it, and shows what the run cost.
 
-A win gets reported as a win. The first four repos below hold the code
+A win gets reported as a win. The first five repos below hold the code
 from an episode, so you can clone one and check the claim yourself.
 
 ## What is in here
+
+**[trip-wallet](https://github.com/amirhosseinakhoondzadeh/trip-wallet)**
+is the repo behind the spec sections episode. A Flutter trip expense app,
+written for the demo by an AI coding agent, where an agent was asked to
+add the trip total in the home currency. It holds the full spec, four
+copies with one section cut, the one sentence version, the wrapper text,
+and three of the 30 runs as branches, each exactly as the agent left it.
 
 **[flutter-parallel-shop](https://github.com/amirhosseinakhoondzadeh/flutter-parallel-shop)**
 is the repo behind the parallel agents episode. Two Claude Code agents
